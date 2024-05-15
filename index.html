@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valge Kõrvits</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Adjust position of social icons */
+    .social-icons {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+
+    .social-icons a {
+      color: #fff; /* White */
+      text-decoration: none;
+      font-size: 15px; /* Adjust size as needed */
+      margin-left: 10px;
+    }
+
+    .social-icons a:hover {
+      color: #CF7C38; /* Soft pastel orange */
+    }
+
+    /* Header and Navigation */
+    header {
+      background-color: #000; /* Black */
+      color: #fff; /* White */
+      padding: 20px;
+      text-align: center;
+      position: relative; /* Add this to position logo */
+    }
+    .logo {
+      order: 1; /* Move logo to the end */
+    }
+    
+    .logo {
+      position: absolute;
+      top: -20px;
+      left: 5px;
+      width: 140px; /* Adjust size as needed */
+      height: auto;
+    }
+
+    nav {
+      background-color: #000000; /* blech */
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 2px solid #000; /* Black */
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #CF7C38; /* Darker Orange */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000; /* Black */
+      color: #fff; /* White */
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      transition: transform 0.3s ease;
+      transform: translateY(100%);
+    }
+
+    footer.visible {
+      transform: translateY(0%);
+    }
+
+    footer a {
+      color: #fff; /* White */
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Sections */
+    .main-section {
+      margin: 20px;
+      padding: 20px;
+      background-color: #000; /* Black */
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-section h2 {
+      color: #CF7C38; /* Soft pastel orange */
+      margin-bottom: 20px;
+    }
+
+    .main-section p {
+      color: #fff; /* White */
+      line-height: 1.6;
+    }
+
+    .main-section img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Product Section */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      padding: 10px;
+      background-color: #fff; /* White */
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .product h3 {
+      color: #CF7C38; /* Soft pastel orange */
+    }
+
+    .product p {
+      color: #333; /* Dark gray */
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 25px;
+      box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* CSS for navigation arrows */
+    .prev,
+    .next {
+      color: white; /* Set default color */
+      position: absolute;
+      top: 50%;
+      margin-top: -10px;
+      text-decoration: none; /* Remove underline */
+      padding: 10px;
+    }
+    
+    /* Hover effect */
+    .prev:hover,
+    .next:hover {
+      color: rgb(235, 125, 62); /* Change color on hover */
+    }
+  </style>
+</head>
+
+<body style="background-color: #000; margin: 0; padding: 0;">
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="Logo" class="logo">
+      <h1></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="Catering.html">Catering</a></li>
+          <li><a href="products.html">Pop-up Coffee</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="shop.html">Exibition-Shop</a></li> 
+          <li><a href="orders.html">Orders</a></li> 
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/valgekorvits/?locale=et_EE" target="_blank"><i class="fab fa-facebook-f" style="font-size: 15px; margin-left: 10px;"></i></a>
+        <a href="https://www.instagram.com/valgekorvits/" target="_blank"><i class="fab fa-instagram" style="font-size: 15px; margin-left: 10px;"></i></a>
+        <!-- Fienta Logo -->
+        <a href="https://fienta.com/et/o/valgekorvits" target="_blank"><img src="fienta_logo.png" alt="Fienta Logo" style="width: 15px; height: 15px; margin-left: 10px;"></a>
+      <!-- Menu Buttons -->
+      <style>
+        .menu-buttons button {
+          background-color: black;
+          color: #CF7C38;
+          border: none;
+          padding: 10px 20px;
+          margin: 5px;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+      </style>
+      </head>
+  <div class="menu-buttons">
+    <button onclick="window.location.href='indexEE.html'">EE</button>
+    <button onclick="window.location.href='indexRU.html'">RU</button>
+    <button onclick="window.location.href='indexFIN.html'">FIN</button>
+
+  </div>
+</div>
+</div>
+    </div>
+  </header>
+
+
+</html>
+  <section class="main-section" id="home">
+    <div class="container">
+      <h2></h2>
+      <!-- Image slideshow -->
+      <div class="slideshow-container">
+        <img class="home-image" src="cafe.jpg" alt="Café">
+        <img class="home-image" src="ANVA9825.jpg" alt="anva">
+        <img class="home-image" src="cappucino2.jpg" alt="cappucino2">
+        <!-- Add more images here -->
+      </div>
+      <!-- Navigation arrows -->
+      <a class="prev" onclick="plusSlides(-1)" style="left: 90px;">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)" style="right: 90px;">&#10095;</a>
+    </div>
+  </section>
+    
+  <!-- Products Section -->
+  <section class="main-section" id="products">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="coffee_blend.jpg" alt="Coffee Blend">
+          <h3>Egg and shrimp</h3>
+          <p>Price: $5.99</p>
+        </div>
+        <div class="product">
+          <img src="hummus.png" alt="hummus">
+          <h3>Yellow hummus</h3>
+          <p>Price: $4.99</p>
+        </div>
+        <div class="product">
+          <img src="Tuna.jpg" alt="Tuna">
+          <h3>Tiradito of tuna</h3>
+          <p>Price: $4.99</p>
+        </div>
+        <div class="product">
+          <img src="rice.jpg" alt="Rice">
+          <h3>Quinoa and lots of vegetable</h3>
+          <p>Price: $5.49</p>
+        </div>
+        <div class="product">
+          <img src="ramen.jpg" alt="Ramen">
+          <h3>Ramen</h3>
+          <p>Price: $3.99</p>
+        </div>
+        <div class="product">
+          <img src="pastries.jpg" alt="Pastries">
+          <h3>Sweet potato fries with chicken.</h3>
+          <p>Price: $2.99</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Valge Kõrvits. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- Slideshow functionality -->
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("home-image");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 80000); // Change image every 8 seconds
+    }
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+  </script>
+</body>
+<script>
+  

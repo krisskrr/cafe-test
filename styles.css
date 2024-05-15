@@ -1,0 +1,163 @@
+/* styles.css */
+
+/* Reset default styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #060000;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #ffe6e6; /* Light pastel pink */
+  color: #333;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-style: italic; /* Add italics */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #CF7C38; /* Lighter pastel pink */
+}
+
+/* Section styles */
+section {
+  padding: 50px 0;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #CF7C38; /* Soft pastel orange */
+}
+
+section p {
+  color: #666; /* Soft pastel gray */
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #ffe6e6; /* Light pastel pink */
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Product grid styles */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  margin-bottom: 40px;
+}
+
+.product img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin-top: 10px;
+}
+
+.product p {
+  font-style: italic;
+}
+
+/* Adjust position of social icons */
+.social-icons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.social-icons a:hover {
+  color:#CF7C38; /* Soft pastel orange */
+}
+
+/* Adjust header and logo styles */
+header {
+  background-color: transparent; /* Remove the orange background */
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 150px; /* Make the logo bigger */
+  height: auto;
+  z-index: 999; /* Ensure the logo appears above other content */
+}
+
+/* Ensure the buttons and effects are still styled */
+/* Adjusted position of social icons */
+.social-icons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.social-icons a {
+  color: #fff; /* White */
+  text-decoration: none;
+  font-size: 18px; /* Adjust size as needed */
+  margin-left: 10px;
+}
+
+.social-icons a:hover {
+  color: #CF7C38; /* Soft pastel orange */
+}

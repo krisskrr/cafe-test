@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* CSS styles from the provided code */
+    /* Add any additional styles specific to the menu if needed */
+
+    /* Header and Navigation */
+    header {
+      background-color: #000; /* Black */
+      color: #fff; /* White */
+      padding: 20px;
+      text-align: center;
+      position: relative; /* Add this to position logo */
+    }
+ 
+    .social-icons a {
+      color: #fff; /* White */
+      text-decoration: none;
+      font-size: 18px; /* Adjust size as needed */
+      margin-left: 10px;
+    }
+
+    .social-icons a:hover {
+      color: #CF7C38; /* Soft pastel orange */
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 90px; /* Adjust the width as needed */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    nav {
+      background-color: #000000; /* Orange */
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 2px solid #000; /* Black */
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #CF7C38; /* Darker Orange */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000; /* Black */
+      color: #fff; /* White */
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      transition: transform 0.3s ease;
+      transform: translateY(100%);
+    }
+
+    footer.visible {
+      transform: translateY(0%);
+    }
+
+    footer a {
+      color: #fff; /* White */
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Menu Category */
+    .menu-category {
+      margin-bottom: 30px;
+      border-top: 2px solid #CF7C38; /* Orange */
+      border-bottom: 2px solid #CF7C38; /* Orange */
+      padding: 20px 0;
+      background-color: #000; /* Black */
+    }
+
+    .menu-category h3 {
+      color: #CF7C38; /* Soft pastel orange */
+      margin-bottom: 10px;
+    }
+
+    .menu-category ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .menu-category ul li {
+      color: #fff; /* White */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-category ul li .price {
+      color: #fff;
+      margin-left: -50px; /* Move prices to the left */
+      position: relative;
+    }
+
+    .menu-category ul li .price:before {
+      content: '';
+      position: absolute;
+      left: -10px; /* Position the orange vertical line */
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background-color: #CF7C38; /* Orange */
+    }
+
+    /* Whole Page Background */
+    body {
+      background-color: #000; /* Black */
+      color: #fff; /* White */
+    }
+
+    /* Translate Button */
+    .translate-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Button container */
+    .button-container {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .button-container button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="Logo" class="logo"> <!-- Add logo here -->
+      <h1></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="Catering.html">Catering</a></li>
+          <li><a href="products.html">Pop-up Coffee</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="shop.html">Exibition-Shop</a></li> 
+          <li><a href="orders.html">Orders</a></li> 
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/valgekorvits/?locale=et_EE" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/valgekorvits/" target="_blank"><i class="fab fa-instagram"></i></a>
+         <!-- Nupp -->
+         <a href="https://fienta.com/et/o/valgekorvits" target="_blank"><img src="fienta_logo.png" alt="Fienta Logo" style="width: 15px; height: 15px; margin-left: 10px;"></a>
+        <!-- Button container -->
+        <!-- Menu Buttons -->

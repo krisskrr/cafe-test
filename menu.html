@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* CSS styles from the provided code */
+    /* Add any additional styles specific to the menu if needed */
+
+    /* Header and Navigation */
+    header {
+      background-color: #000; /* Black */
+      color: #fff; /* White */
+      padding: 20px;
+      text-align: center;
+      position: relative; /* Add this to position logo */
+    }
+ 
+    .social-icons a {
+      color: #fff; /* White */
+      text-decoration: none;
+      font-size: 18px; /* Adjust size as needed */
+      margin-left: 10px;
+    }
+
+    .social-icons a:hover {
+      color: #CF7C38; /* Soft pastel orange */
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 90px; /* Adjust the width as needed */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    nav {
+      background-color: #000000; /* Orange */
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 2px solid #000; /* Black */
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #CF7C38; /* Darker Orange */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000; /* Black */
+      color: #fff; /* White */
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      transition: transform 0.3s ease;
+      transform: translateY(100%);
+    }
+
+    footer.visible {
+      transform: translateY(0%);
+    }
+
+    footer a {
+      color: #fff; /* White */
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Menu Category */
+    .menu-category {
+      margin-bottom: 30px;
+      border-top: 2px solid #CF7C38; /* Orange */
+      border-bottom: 2px solid #CF7C38; /* Orange */
+      padding: 20px 0;
+      background-color: #000; /* Black */
+    }
+
+    .menu-category h3 {
+      color: #CF7C38; /* Soft pastel orange */
+      margin-bottom: 10px;
+    }
+
+    .menu-category ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .menu-category ul li {
+      color: #fff; /* White */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-category ul li .price {
+      color: #fff;
+      margin-left: -50px; /* Move prices to the left */
+      position: relative;
+    }
+
+    .menu-category ul li .price:before {
+      content: '';
+      position: absolute;
+      left: -10px; /* Position the orange vertical line */
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background-color: #CF7C38; /* Orange */
+    }
+
+    /* Whole Page Background */
+    body {
+      background-color: #000; /* Black */
+      color: #fff; /* White */
+    }
+
+    /* Translate Button */
+    .translate-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Button container */
+    .button-container {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .button-container button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="Logo" class="logo"> <!-- Add logo here -->
+      <h1></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="Catering.html">Catering</a></li>
+          <li><a href="products.html">Pop-up Coffee</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="shop.html">Exibition-Shop</a></li> 
+          <li><a href="orders.html">Orders</a></li> 
+          <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+      </nav>
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/valgekorvits/?locale=et_EE" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/valgekorvits/" target="_blank"><i class="fab fa-instagram"></i></a>
+         <!-- Nupp -->
+         <a href="https://fienta.com/et/o/valgekorvits" target="_blank"><img src="fienta_logo.png" alt="Fienta Logo" style="width: 15px; height: 15px; margin-left: 10px;"></a>
+        <!-- Button container -->
+        <!-- Menu Buttons -->
+        <style>
+          .menu-buttons button {
+            background-color: black;
+            color: #CF7C38;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+          }
+        </style>
+        </head>
+        <body>
+        <div class="menu-buttons">
+          <button onclick="window.location.href='menuFIN.html'">FIN</button>
+          <button onclick="window.location.href='menuRU.html'">RU</button>
+          <button onclick="window.location.href='menuEE.html'">EE</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <!-- Add other meta tags, stylesheets, and scripts here -->
+  </head>
+  <body>
+    <header>
+      <!-- Header content goes here -->
+    </header>
+  
+    <!-- Main content of the page -->
+    <div class="container">
+      <!-- Other HTML content goes here -->
+  
+      <!-- Google Translate Button -->
+     
+       
+  
+    <footer>
+      <!-- Footer content goes here -->
+    </footer>
+  
+   
+  
+
+  <section class="main-section" id="menu">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <!-- Menu categories -->
+      <div class="menu-category">
+        <h3>SMÖRGÅSBORD (LARGE DANISH-STYLE OPEN SANDWICH)</h3>
+        <ul>
+          <li>Flounder, remoulade, greens, vegetables <span class="price">7€</span></li>
+          <li>Beef, pate, Korean-style beetroot, pickled cucumber <span class="price">6€</span></li>
+          <li>Egg and shrimp <span class="price">5€</span></li>
+          <li>Spicy herring, egg, pickled onion <span class="price">3€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>SPREADS / SAUCES / DIPS</h3>
+        <ul>
+          <li>Arugula pesto with truffle <span class="price">6€</span></li>
+          <li>Yellow hummus <span class="price">5€</span></li>
+          <li>Avocado with chili <span class="price">7€</span></li>
+          <li>Onion jam (for cheese) <span class="price">3€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>TAPAS / OLIVES / CHARCUTERIE</h3>
+        <ul>
+          <li>Tuna tiradito <span class="price">14€</span></li>
+          <li>Skågen of Norwegian shrimp <span class="price">9€</span></li>
+          <li>Foie gras <span class="price">8€</span></li>
+          <li>Spicy herring with onion <span class="price">4€</span></li>
+          <li>Truffle goat cheese <span class="price">8€</span></li>
+          <li>Charcuterie (ham and salami selection) <span class="price">10€</span></li>
+          <li>Olives and more (serves two) <span class="price">7€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>SALADS</h3>
+        <ul>
+          <li>Warm noodle salad with shrimp and spicy sriracha mayo <span class="price">9€</span></li>
+          <li>Warm noodle salad with mussels and sweet chili sauce <span class="price">9€</span></li>
+          <li>Quinoa and plenty of vegetables <span class="price">6€</span></li>
+          <li>Beetroot with Korean spices <span class="price">5€</span></li>
+          <li>Wakame seaweed salad <span class="price">7€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>RAMEN</h3>
+        <ul>
+          <li>Ramen (with beef / with goat cheese / with tuna) <span class="price">8€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>ENTRÉES</h3>
+        <ul>
+          <li>Smelt <span class="price">7€</span></li>
+          <li>Beef “Pho bo” style <span class="price">10€</span></li>
+          <li>Grilled Argentine shrimp <span class="price">12€</span></li>
+          <li>Red pork cheeks with green onions <span class="price">10€</span></li>
+          <li>Chicken wings “Buffalo” style <span class="price">10€</span></li>
+          <li>“Those same” mussels <span class="price">15€</span></li>
+          <li>Baked flounder <span class="price">13€</span></li>
+          <li>Loaded sweet potato fries <span class="price">9€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>KIDS’ FAVORITES</h3>
+        <ul>
+          <li>Sweet potato fries with chicken <span class="price">5€</span></li>
+          <li>Sweet potato fries with chicken nuggets (what you do for kids) <span class="price">5€</span></li>
+          <li>Noodle soup with meatballs <span class="price">5€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>BAKED GOODS / CAKES</h3>
+        <ul>
+          <li>Assorted cakes / pies / pastries <span class="price">4€</span></li>
+          <li>Sweet pancakes <span class="price">3€</span></li>
+          <li>Pancakes with ice cream <span class="price">3€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>ICE CREAMS</h3>
+        <ul>
+          <li>1 scoop / 3 scoops <span class="price">2€ / 5€</span></li>
+        </ul>
+      </div>
+      <!-- Add more categories as needed -->
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Valge Kõrvits. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

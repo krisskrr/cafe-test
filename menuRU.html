@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Меню</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Добавить CSS Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* CSS-стили из предоставленного кода */
+    /* Добавьте любые дополнительные стили, специфичные для меню, если нужно */
+
+    /* Шапка и навигация */
+    header {
+      background-color: #000; /* Черный */
+      color: #fff; /* Белый */
+      padding: 20px;
+      text-align: center;
+      position: relative; /* Добавить это, чтобы разместить логотип */
+    }
+ 
+    .social-icons a {
+      color: #fff; /* Белый */
+      text-decoration: none;
+      font-size: 18px; /* Регулируйте размер при необходимости */
+      margin-left: 10px;
+    }
+
+    .social-icons a:hover {
+      color: #CF7C38; /* Светло-оранжевый */
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 90px; /* Регулируйте ширину при необходимости */
+      height: auto; /* Сохранить пропорции */
+    }
+
+    nav {
+      background-color: #000000; /* Оранжевый */
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 2px solid #000; /* Черный */
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #CF7C38; /* Темно-оранжевый */
+    }
+
+    /* Футер */
+    footer {
+      background-color: #000; /* Черный */
+      color: #fff; /* Белый */
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      transition: transform 0.3s ease;
+      transform: translateY(100%);
+    }
+
+    footer.visible {
+      transform: translateY(0%);
+    }
+
+    footer a {
+      color: #fff; /* Белый */
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Категория меню */
+    .menu-category {
+      margin-bottom: 30px;
+      border-top: 2px solid #CF7C38; /* Оранжевый */
+      border-bottom: 2px solid #CF7C38; /* Оранжевый */
+      padding: 20px 0;
+      background-color: #000; /* Черный */
+    }
+
+    .menu-category h3 {
+      color: #CF7C38; /* Светло-оранжевый */
+      margin-bottom: 10px;
+    }
+
+    .menu-category ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .menu-category ul li {
+      color: #fff; /* Белый */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-category ul li .price {
+      color: #fff;
+      margin-left: -50px; /* Переместить цены влево */
+      position: relative;
+    }
+
+    .menu-category ul li .price:before {
+      content: '';
+      position: absolute;
+      left: -10px; /* Установить оранжевую вертикальную линию */
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background-color: #CF7C38; /* Оранжевый */
+    }
+
+    /* Фон всей страницы */
+    body {
+      background-color: #000; /* Черный */
+      color: #fff; /* Белый */
+    }
+
+    /* Кнопка перевода */
+    .translate-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Контейнер для кнопок */
+    .button-container {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .button-container button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="Логотип" class="logo"> <!-- Добавить логотип здесь -->
+      <h1></h1>
+      <nav>
+        <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Catering.html">Catering</a></li>
+            <li><a href="products.html">Pop-up Coffee</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="shop.html">Exibition-Shop</a></li> 
+        </ul>
+      </nav>
+      <!-- Иконки социальных сетей -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/valgekorvits/?locale=et_EE" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/valgekorvits/" target="_blank"><i class="fab fa-instagram"></i></a>
+         <!-- Кнопка -->
+         <a href="https://fienta.com/et/o/valgekorvits" target="_blank"><img src="fienta_logo.png" alt="Логотип Fienta" style="width: 15px; height: 15px; margin-left: 10px;"></a>
+        <!-- Контейнер для кнопок -->
+        <!-- Кнопки меню -->
+        <style>
+          .menu-buttons button {
+            background-color: black;
+            color: #CF7C38;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+          }
+        </style>
+        </head>
+        <body>
+        <div class="menu-buttons">
+          <button onclick="window.location.href='menu.html'">ENG</button>
+          <button onclick="window.location.href='menuEE.html'">EE</button>
+          <button onclick="window.location.href='menuFIN.html'">FIN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="main-section" id="menu">
+    <div class="container">
+      <h2>Наше меню</h2>
+      <!-- Категории меню -->
+      <div class="menu-category">
+        <h3>ШМУРДСБОРД (БОЛЬШОЙ ДАНСКИЙ БУТЕРБРОД)</h3>
+        <ul>
+          <li>Камбала, ремулад, зелень, овощи <span class="price">7€</span></li>
+          <li>Говядина, паштет, корейская свекла, маринованный огурец <span class="price">6€</span></li>
+          <li>Яйцо и креветка <span class="price">5€</span></li>
+          <li>Острый селедка, яйцо, маринованный лук <span class="price">3€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>РАСПРОСТРАНЕНИЕ / СОУСЫ / ЗАМАЧИВАНИЯ</h3>
+        <ul>
+          <li>Руккола песто с трюфелем <span class="price">6€</span></li>
+          <li>Желтый хумус <span class="price">5€</span></li>
+          <li>Авокадо с чили <span class="price">7€</span></li>
+          <li>Луковая джем (для сыра) <span class="price">3€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>ТАПАС / ОЛИВЫ / КОЛБАСЫ</h3>
+        <ul>
+          <li>Тунец тирадито <span class="price">14€</span></li>
+          <li>Норвежский креветка Скаген <span class="price">9€</span></li>
+          <li>Фуа гра <span class="price">8€</span></li>
+          <li>Острый селедка с луком <span class="price">4€</span></li>
+          <li>Трюфельное козье сыр <span class="price">8€</span></li>
+          <li>Колбаса (выбор ветчины и салями) <span class="price">10€</span></li>
+          <li>Оливки и многое другое (на двоих) <span class="price">7€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>САЛАТЫ</h3>
+        <ul>
+          <li>Теплый лапша с креветками и острой майонезом с сыраси <span class="price">9€</span></li>
+          <li>Теплый лапша с мидиями и сладким чили соусом <span class="price">9€</span></li>
+          <li>Киноа и много овощей <span class="price">6€</span></li>
+          <li>Свекла с корейскими специями <span class="price">5€</span></li>
+          <li>Салат из вакаме морских водорослей <span class="price">7€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>РАМЕН</h3>
+        <ul>
+          <li>Рамен (с говядиной / с козьим сыром / с тунцом) <span class="price">8€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>ЗАКУСКИ</h3>
+        <ul>
+          <li>Сельдь <span class="price">7€</span></li>
+          <li>Говядина "Pho bo" стиль <span class="price">10€</span></li>
+          <li>Жареная аргентинская креветка <span class="price">12€</span></li>
+          <li>Красные свиные щеки с зеленым луком <span class="price">10€</span></li>
+          <li>Куриные крылышки "Буффало" стиль <span class="price">10€</span></li>
+          <li>"Те же самые" мидии <span class="price">15€</span></li>
+          <li>Запеченная камбала <span class="price">13€</span></li>
+          <li>Загруженные сладкие картофельные фри <span class="price">9€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>ЛЮБИМЫЕ БЛЮДА ДЕТЕЙ</h3>
+        <ul>
+          <li>Сладкие картофельные фри с курицей <span class="price">5€</span></li>
+          <li>Сладкие картофельные фри с куриными наггетсами (что делают для детей) <span class="price">5€</span></li>
+          <li>Суп с лапшой и мясными фрикадельками <span class="price">5€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>ВЫПЕЧКА / ТОРТЫ</h3>
+        <ul>
+          <li>Ассортимент тортов / пирогов / выпечки <span class="price">4€</span></li>
+          <li>Сладкие блины <span class="price">3€</span></li>
+          <li>Блины с мороженым <span class="price">3€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>МОРОЖЕНОЕ</h3>
+        <ul>
+          <li>1 шар / 3 шара <span class="price">2€ / 5€</span></li>
+        </ul>
+      </div>
+      <!-- Добавьте больше категорий при необходимости -->
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Valge Kõrvits. Все права защищены.</p>
+    </div>
+  </footer>
+</body>
+</html>

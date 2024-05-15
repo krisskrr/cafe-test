@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Menüü</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Lisa Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* CSS stiilid pakutud koodist */
+    /* Lisa vajadusel menüüle omaseid täiendavaid stiile */
+
+    /* Päis ja navigatsioon */
+    header {
+      background-color: #000; /* Must */
+      color: #fff; /* Valge */
+      padding: 20px;
+      text-align: center;
+      position: relative; /* Logo asetamiseks */
+    }
+ 
+    .social-icons a {
+      color: #fff; /* Valge */
+      text-decoration: none;
+      font-size: 18px; /* Kohanda suurust vastavalt vajadusele */
+      margin-left: 10px;
+    }
+
+    .social-icons a:hover {
+      color: #CF7C38; /* Hele pastelne oranž */
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 90px; /* Kohanda laiust vastavalt vajadusele */
+      height: auto; /* Säilita proportsioonid */
+    }
+
+    nav {
+      background-color: #000000; /* Oranž */
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 2px solid #000; /* Must */
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #CF7C38; /* Tumedam oranž */
+    }
+
+    /* Jalus */
+    footer {
+      background-color: #000; /* Must */
+      color: #fff; /* Valge */
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      transition: transform 0.3s ease;
+      transform: translateY(100%);
+    }
+
+    footer.visible {
+      transform: translateY(0%);
+    }
+
+    footer a {
+      color: #fff; /* Valge */
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Menüü kategooria */
+    .menu-category {
+      margin-bottom: 30px;
+      border-top: 2px solid #CF7C38; /* Oranž */
+      border-bottom: 2px solid #CF7C38; /* Oranž */
+      padding: 20px 0;
+      background-color: #000; /* Must */
+    }
+
+    .menu-category h3 {
+      color: #CF7C38; /* Hele pastelne oranž */
+      margin-bottom: 10px;
+    }
+
+    .menu-category ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .menu-category ul li {
+      color: #fff; /* Valge */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-category ul li .price {
+      color: #fff;
+      margin-left: -50px; /* Liiguta hinnad vasakule */
+      position: relative;
+    }
+
+    .menu-category ul li .price:before {
+      content: '';
+      position: absolute;
+      left: -10px; /* Paiguta oranž vertikaalne joon */
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background-color: #CF7C38; /* Oranž */
+    }
+
+    /* Lehekülje taust */
+    body {
+      background-color: #000; /* Must */
+      color: #fff; /* Valge */
+    }
+
+    /* Tõlkimisnupp */
+    .translate-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="Logo" class="logo"> <!-- Lisa logo siia -->
+      <h1></h1>
+      <nav>
+        <ul>
+
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Catering.html">Catering</a></li>
+            <li><a href="products.html">Pop-up Coffee</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="shop.html">Exibition-Shop</a></li> 
+        </ul>
+      </nav>
+      <!-- Sotsiaalmeedia ikoonid -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/valgekorvits/?locale=et_EE" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/valgekorvits/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <!-- Nupp -->
+        <a href="https://fienta.com/et/o/valgekorvits" target="_blank"><img src="fienta_logo.png" alt="Fienta Logo" style="width: 15px; height: 15px; margin-left: 10px;"></a>
+        <!-- Button container -->
+        <!-- Menu Buttons -->
+        <style>
+          .menu-buttons button {
+            background-color: black;
+            color: #CF7C38;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+          }
+        </style>
+        </head>
+        <body>
+        <div class="menu-buttons">
+          <button onclick="window.location.href='menu.html'">ENG</button>
+          <button onclick="window.location.href='menuRU.html'">RU</button>
+          <button onclick="window.location.href='menuFIN.html'">FIN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="main-section" id="menu">
+    <div class="container">
+      <h2>Meie Menüü</h2>
+      <!-- Menüü kategooriad -->
+      <div class="menu-category">
+        <h3>СМЁРРЕБРОД (SUUR VÕILEIB TAANIPÄRASEL MOEL)</h3>
+        <ul>
+          <li>Heik, remulaad, rohelised, köögiviljad <span class="price">7€</span></li>
+          <li>Veiseliha, pasteet, Korea peet, marineeritud kurk <span class="price">6€</span></li>
+          <li>Muna ja krevetid <span class="price">5€</span></li>
+          <li>Vürtsikas kilu, muna, marineeritud sibul <span class="price">3€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>MÄÄRID / KASTMED / DIPID</h3>
+        <ul>
+          <li>Rukolapesto trühvliga <span class="price">6€</span></li>
+          <li>Kollane hummus <span class="price">5€</span></li>
+          <li>Avokaado tšilliga <span class="price">7€</span></li>
+          <li>Sibulamoos (juustule) <span class="price">3€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>TAPEED / OLIIVID / ŠARLUUT</h3>
+        <ul>
+          <li>Tuunikala tiiradito <span class="price">14€</span></li>
+          <li>Skågen norra krevetitest <span class="price">9€</span></li>
+          <li>Фуа-гра <span class="price">8€</span></li>
+          <li>Vürtsikas kilu sibulaga <span class="price">4€</span></li>
+          <li>Trühvlikits kitsejuust <span class="price">8 €</span></li>
+          <li>Šarlutt (sinki ja salamit valides) <span class="price">10 €</span></li>
+          <li>Oliivid ja mitte ainult (sobib kahele) <span class="price">7€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>SALATID</h3>
+        <ul>
+          <li>Soe nuudlisalat krevettidega ja terava Sriracha majoneesikastmega <span class="price">9€</span></li>
+          <li>Soe nuudlisalat mereandidega ja magusa tšillikastmega <span class="price">9€</span></li>
+          <li>Quinoa ja palju köögivilju <span class="price">6€</span></li>
+          <li>Punapeet Korea maitseainetega <span class="price">5€</span></li>
+          <li>Wakame merevetika salat <span class="price">7€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>RAMEN</h3>
+        <ul>
+          <li>Ramen (veiseliha / kitsejuust / tuunikala) <span class="price">8€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>PEAMISED ROAD</h3>
+        <ul>
+          <li>Peipsi räim <span class="price">7€</span></li>
+          <li>Veiseliha "Pho bo" <span class="price">10€</span></li>
+          <li>Argentiina roosad krevetid grillil <span class="price">12€</span></li>
+          <li>Punased seajalad rohelise sibulaga <span class="price">10€</span></li>
+          <li>Kanatiivad "Buffalo" <span class="price">10€</span></li>
+          <li>„Need samad“ rannakarbid <span class="price">15€</span></li>
+          <li>Küpsetatud kammeljas <span class="price">13€</span></li>
+          <li>Laetud bataadifriikartulid <span class="price">9€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>LASTEROAD</h3>
+        <ul>
+          <li>Bataadifriikartulid kanaga <span class="price">5€</span></li>
+          <li>Friikartulid koos kana nuggetidega (mida iganes teed laste heaks) <span class="price">5€</span></li>
+          <li>Lihapallidega nuudlid <span class="price">5€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>KÜPSETISED / KOOGID</h3>
+        <ul>
+          <li>Valik torte / pirukaid / küpsiseid <span class="price">4€</span></li>
+          <li>Magusad pannkoogid <span class="price">3€</span></li>
+          <li>Pannkook jäätisega <span class="price">3€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>JÄÄTIS</h3>
+        <ul>
+          <li>1 pall / 3 palli <span class="price">2€ / 5€</span></li>
+        </ul>
+      </div>
+      <!-- Lisa vajadusel rohkem kategooriaid -->
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Valge Kõrvits. Kõik õigused kaitstud.</p>
+    </div>
+  </footer>
+</body>
+</html>

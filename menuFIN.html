@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Lisää Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* CSS-tyylit annetusta koodista */
+    /* Lisää tarvittaessa muita tyylejä, jotka ovat erityisiä valikolle */
+
+    /* Otsikko ja navigointi */
+    header {
+      background-color: #000; /* Musta */
+      color: #fff; /* Valkoinen */
+      padding: 20px;
+      text-align: center;
+      position: relative; /* Lisää tämä logon sijoittamiseksi */
+    }
+ 
+    .social-icons a {
+      color: #fff; /* Valkoinen */
+      text-decoration: none;
+      font-size: 18px; /* Säädä kokoa tarvittaessa */
+      margin-left: 10px;
+    }
+
+    .social-icons a:hover {
+      color: #CF7C38; /* Vaalea oranssi */
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 90px; /* Säädä leveyttä tarvittaessa */
+      height: auto; /* Säilytä kuvasuhde */
+    }
+
+    nav {
+      background-color: #000000; /* Oranssi */
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 2px solid #000; /* Musta */
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #CF7C38; /* Tummempi oranssi */
+    }
+
+    /* Alatunniste */
+    footer {
+      background-color: #000; /* Musta */
+      color: #fff; /* Valkoinen */
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      transition: transform 0.3s ease;
+      transform: translateY(100%);
+    }
+
+    footer.visible {
+      transform: translateY(0%);
+    }
+
+    footer a {
+      color: #fff; /* Valkoinen */
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Valikkokategoria */
+    .menu-category {
+      margin-bottom: 30px;
+      border-top: 2px solid #CF7C38; /* Oranssi */
+      border-bottom: 2px solid #CF7C38; /* Oranssi */
+      padding: 20px 0;
+      background-color: #000; /* Musta */
+    }
+
+    .menu-category h3 {
+      color: #CF7C38; /* Vaalea oranssi */
+      margin-bottom: 10px;
+    }
+
+    .menu-category ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .menu-category ul li {
+      color: #fff; /* Valkoinen */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-category ul li .price {
+      color: #fff;
+      margin-left: -50px; /* Siirrä hinnat vasemmalle */
+      position: relative;
+    }
+
+    .menu-category ul li .price:before {
+      content: '';
+      position: absolute;
+      left: -10px; /* Aseta oranssi pystysuora viiva */
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background-color: #CF7C38; /* Oranssi */
+    }
+
+    /* Koko sivun tausta */
+    body {
+      background-color: #000; /* Musta */
+      color: #fff; /* Valkoinen */
+    }
+
+    /* Käännä nappi */
+    .translate-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Napin säiliö */
+    .button-container {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .button-container button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="Logo" class="logo"> <!-- Lisää logo tähän -->
+      <h1></h1>
+      <nav>
+        <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Catering.html">Catering</a></li>
+            <li><a href="products.html">Pop-up Coffee</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="shop.html">Exibition-Shop</a></li> 
+        </ul>
+      </nav>
+      <!-- Sosiaalisten medioiden kuvakkeet -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/valgekorvits/?locale=et_EE" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/valgekorvits/" target="_blank"><i class="fab fa-instagram"></i></a>
+         <!-- Nappi -->
+         <a href="https://fienta.com/et/o/valgekorvits" target="_blank"><img src="fienta_logo.png" alt="Fienta Logo" style="width: 15px; height: 15px; margin-left: 10px;"></a>
+        <!-- Napin säiliö -->
+        <!-- Valikkonapit -->
+        <style>
+          .menu-buttons button {
+            background-color: black;
+            color: #CF7C38;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+          }
+        </style>
+        </head>
+        <body>
+        <div class="menu-buttons">
+          <button onclick="window.location.href='menu.html'">ENG</button>
+          <button onclick="window.location.href='menuRU.html'">RU</button>
+          <button onclick="window.location.href='menuEE.html'">EE</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="main-section" id="menu">
+    <div class="container">
+      <h2>Menu</h2>
+      <!-- Valikkokategoriat -->
+      <div class="menu-category">
+        <h3>VOILEIPÄKAKUT (SUURI TANSKALAISVAIKEA AVOSANDWICH)</h3>
+        <ul>
+          <li>Kampela, remoulade, vihreät, vihannekset <span class="price">7€</span></li>
+          <li>Naudanliha, pate, korealainen punajuuri, suolakurkku <span class="price">6€</span></li>
+          <li>Muna ja katkarapu <span class="price">5€</span></li>
+          <li>Mausteinen silakka, muna, suolakurkku <span class="price">3€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>LEVITTEET / KASTIKKEET / DIPIT</h3>
+        <ul>
+          <li>Rucola pesto tryffelillä <span class="price">6€</span></li>
+          <li>Keltainen hummus <span class="price">5€</span></li>
+          <li>Avokado chilillä <span class="price">7€</span></li>
+          <li>Sipulihillo (juustolle) <span class="price">3€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>TAPAS / OLIIVIT / LEIKKELEET</h3>
+        <ul>
+          <li>Tonnikalan tiradito <span class="price">14€</span></li>
+          <li>Norjalaisen katkaravun Skågen <span class="price">9€</span></li>
+          <li>Foie gras <span class="price">8€</span></li>
+          <li>Mausteinen silakka sipulilla <span class="price">4€</span></li>
+          <li>Tryffeli vuohenjuusto <span class="price">8€</span></li>
+          <li>Leikkeleet (kinkku- ja salamivalikoima) <span class="price">10€</span></li>
+          <li>Oliivit ja muuta (kaksi annosta) <span class="price">7€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>SALAATIT</h3>
+        <ul>
+          <li>Lämmin nuudelisalaatti katkaravuilla ja mausteisella sriracha-majoneesilla <span class="price">9€</span></li>
+          <li>Lämmin nuudelisalaatti sinisimpukoilla ja makealla chilikastikkeella <span class="price">9€</span></li>
+          <li>Quinoa ja paljon vihanneksia <span class="price">6€</span></li>
+          <li>Punajuuri korealaisilla mausteilla <span class="price">5€</span></li>
+          <li>Wakame merilevä salaatti <span class="price">7€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>RAMEN</h3>
+        <ul>
+          <li>Ramen (naudanlihalla / vuohenjuustolla / tonnikalalla) <span class="price">8€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>PÄÄRUOAT</h3>
+        <ul>
+          <li>Kuore <span class="price">7€</span></li>
+          <li>Naudanliha "Pho bo" -tyylillä <span class="price">10€</span></li>
+          <li>Grillattu argentiinalainen katkarapu <span class="price">12€</span></li>
+          <li>Punaiset possun posket vihreillä sipuleilla <span class="price">10€</span></li>
+          <li>Kanan siivet "Buffalo" -tyylillä <span class="price">10€</span></li>
+          <li>Samat sinisimpukat <span class="price">15€</span></li>
+          <li>Paistettu kampela <span class="price">13€</span></li>
+          <li>Täytetyt bataattiranskalaiset <span class="price">9€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>LASTEN SUOSIKIT</h3>
+        <ul>
+          <li>Bataattiranskalaiset kanalla <span class="price">5€</span></li>
+          <li>Bataattiranskalaiset kananugeteilla (mitä tekee lasten vuoksi) <span class="price">5€</span></li>
+          <li>Lihaisten lihapullien nuudelikeitto <span class="price">5€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>LEIVONNAISET / KAKUT</h3>
+        <ul>
+          <li>Erilaiset kakut / piirakat / leivonnaiset <span class="price">4€</span></li>
+          <li>Herkkupannukakut <span class="price">3€</span></li>
+          <li>Pannukakut jäätelöllä <span class="price">3€</span></li>
+        </ul>
+      </div>
+      <div class="menu-category">
+        <h3>JÄÄTTEET</h3>
+        <ul>
+          <li>1 pallo / 3 palloa <span class="price">2€ / 5€</span></li>
+        </ul>
+      </div>
+      <!-- Lisää kategorioita tarvittaessa -->
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Valge Kõrvits. Kaikki oikeudet pidätetään.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
